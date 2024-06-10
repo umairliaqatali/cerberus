@@ -31,3 +31,45 @@ body {
     text-wrap: balance;
   }
 }
+
+.bg-highlight-radial {
+  background: radial-gradient(circle 400px at 50% 45%, #292929, #0D0D0D);
+}
+
+.hover\:shadow-expand:hover {
+  box-shadow: 0 0 8px 8px #4B7E71; /* Adjust the shadow as needed */
+}
+
+.shadow-top-bottom {
+  box-shadow: 0 0 3px 0px #878787;
+  border-top: 3px solid #878787;
+  border-bottom: 3px solid #878787;
+}
+
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(-322%);
+  }
+  100% {
+    transform: translateX(322%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll-horizontal 6s linear infinite;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+@screen md {
+  .footer-name-font {
+    font-size: 12rem;
+  }
+}
