@@ -15,11 +15,23 @@ backgroundImage: {
       },
       colors: {
         'custom-dark': '#0D0D0D',
+        // 'custom-dark': '#010101',
         'custom-teal': '#4B7E71',
       },
       height: {
         '900': '900px',
+        '600': '600px',
+
       },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      }  
     },
   },
   plugins: [],

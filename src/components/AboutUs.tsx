@@ -1,12 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
+
 const AboutUs = () => {
   return (
-    <section className="">
-      <h2 className='text-3xl font-bold p-4 md:p-28 md:px-80 text-zinc-600 '>
-      Cerberus Wallet is revolutionizing the wallet experience by offering unparalleled security, simplicity, and accessibility. Experience full autonomy and independence as you manage your assets with just one tap. Cerberus Wallet removes obstacles for crypto newcomers and elevates the custodial experience for advanced users.
+    <section className="md:h-900 overflow-hidden bg-[url('/large-back2.png')] bg-contain bg-bottom bg-no-repeat">
+      <h2 className='text-3xl md:text-5xl leading-relaxed p-4 md:p-28 md:px-80 text-zinc-600 '>
+        Cerberus Wallet is revolutionizing the wallet experience by offering unparalleled security, simplicity, and accessibility. Experience full autonomy and independence as you manage your assets with just one tap. Cerberus Wallet removes obstacles for crypto newcomers and elevates the custodial experience for advanced users.
       </h2>
-      <div className=''>
+      {/* <div className=''>
         <div className="flex justify-center items-center bg-highlight-radial-about-us">
           <Image 
             src="/wallet2.png" 
@@ -18,7 +19,7 @@ const AboutUs = () => {
             style={{ objectFit: 'contain' }} 
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

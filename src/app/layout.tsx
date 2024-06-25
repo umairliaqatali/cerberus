@@ -22,7 +22,7 @@ export default function RootLayout({children,}: Readonly<{
       <body className={inter.className}>
       <div className="bg-custom-dark text-white min-h-screen flex flex-col">
           <Navbar />
-          <main className="flex-grow overflow-hidden">{children}</main>
+          <main className="flex-grow">{children}</main>
           <Footer />
         </div>
       </body>
