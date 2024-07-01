@@ -7,11 +7,11 @@ import clsx from 'clsx';
 
 type CustomButtonProps = {
   text: string;
-  href: string;
+  href?: string;
   className?: string;
 };
 
-const CustomButton: React.FC<CustomButtonProps> = ({ text, href, className }) => {
+const CustomButton: React.FC<CustomButtonProps> = ({ text, href="#register", className }) => {
   const createRipple = (event: MouseEvent<HTMLDivElement>) => {
     const button = event.currentTarget;
     const circle = document.createElement("span");

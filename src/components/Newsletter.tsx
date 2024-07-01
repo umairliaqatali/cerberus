@@ -3,7 +3,7 @@ import CustomButton from '../components/CustomButton';
 
 const Newsletter = () => {
     return (
-      <section className="text-center py-20 px-4">
+      <section className="text-center py-20 px-4" id="register">
         <h2 className="text-3xl font-bold">Subscribe to our newsletter</h2>
         <p className='p-4'>
           Stay updated with new coin releases, blog updates, and exclusive offers delivered straight to your inbox.

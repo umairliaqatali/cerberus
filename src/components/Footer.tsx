@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Footer = () => {
     return (
-      <footer className="py-10 flex flex-col gap-12 px-8 p-4 md:px-28 overflow-hidden bg-[url('/large-back2.png')] bg-contain bg-bottom bg-no-repeat ">
+      <footer className="py-10 flex flex-col gap-12 px-8 p-4 md:px-28 overflow-hidden bg-[url('/large-back2.png')] bg-contain bg-bottom bg-no-repeat " id="contactus">
         <div className='text-center text-7xl text-neutral-500 footer-name-font'>
           <h1>Cerberus </h1>
         </div>

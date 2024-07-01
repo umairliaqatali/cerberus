@@ -55,7 +55,7 @@ const Accordion = () => {
   };
 
   return (
-    <section className="py-20 px-4 md:px-28">
+    <section className="py-20 px-4 md:px-28" id="faq">
       <h2 className="text-3xl font-bold text-left mb-10">Get Clarifications on Your Queries</h2>
       
       {/* Desktop View */}

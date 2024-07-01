@@ -148,3 +148,21 @@ body {
 .parallax {
   transition: transform 0.1s ease-out;
 }
+
+
+/* .subsection {
+  transition: transform 0.5s;
+}
+
+.subsection.zoomed {
+  transform: scale(1.1);
+} */
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  transition: transform 0.3s ease-out;
+}

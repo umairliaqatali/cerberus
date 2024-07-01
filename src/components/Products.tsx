@@ -4,7 +4,7 @@ import CustomButton from '../components/CustomButton';
 
 const Products = () => {
   return (
-    <section className="md:px-28 p-4 py-28 w-full flex flex-col">
+    <section className="md:px-28 p-4 py-28 w-full flex flex-col" id="products">
       <div className='flex flex-row justify-between flex-wrap items-start gap-4'>
         <div className='text-left md:w-auto w-full'>
           <h2 className="text-3xl font-bold">Find your perfect Cerberus hardware wallet</h2>
