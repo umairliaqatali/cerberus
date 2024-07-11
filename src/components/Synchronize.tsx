@@ -121,15 +121,17 @@ const Synchronize = () => {
   useEffect(() => {
     const handleScroll = () => {
       const section = document.querySelector('.parallax-section');
-      const sectionRect = section.getBoundingClientRect();
-      
-      if (sectionRect.top < window.innerHeight && sectionRect.bottom > 0) {
-        document.querySelectorAll('.parallax').forEach((layer) => {
-          const speed = layer.getAttribute('data-speed');
-          const y = (window.scrollY - section.offsetTop) * speed / 10;
-
-          layer.style.transform = `translateY(${Math.min(Math.max(y, -50), 50)}px)`;
-        });
+      if (section instanceof HTMLElement) {
+        const sectionRect = section.getBoundingClientRect();
+        if (sectionRect.top < window.innerHeight && sectionRect.bottom > 0) {
+          document.querySelectorAll('.parallax').forEach((layer) => {
+            const speed = layer.getAttribute('data-speed');
+            if (speed && layer instanceof HTMLElement) {
+              const y = (window.scrollY - section.offsetTop) * parseFloat(speed) / 10;
+              layer.style.transform = `translateY(${Math.min(Math.max(y, -50), 50)}px)`;
+            }
+          });
+        }
       }
     };
 

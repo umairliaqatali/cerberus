@@ -51,7 +51,7 @@ const Products = () => {
           <div className="flex justify-center items-center">
             <Image
               src="/cerberus model_x_min.png"
-              alt="cerberus model 0"
+              alt="cerberus model X"
               className="py-16"
               width={388}
               height={350}
